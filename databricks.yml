@@ -16,4 +16,4 @@ targets:
       host: https://dbc-a32922bd-95d1.cloud.databricks.com/
   prod:
     workspace:
-      host: https://dbc-a32922bd-95d1.cloud.databricks.com/
+      host: https://dbc-32d69cc5-7ff8.cloud.databricks.com/
