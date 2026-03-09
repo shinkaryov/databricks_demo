@@ -1,0 +1,19 @@
+bundle:
+  name: flights_etl_pipeline
+
+include:
+  - resources/*.yml
+
+variables:
+  schema_name:
+    description: "Schema name for flights data"
+    default: "flights"
+
+targets:
+  dev:
+    default: true
+    workspace:
+      host: https://dbc-a32922bd-95d1.cloud.databricks.com/
+  prod:
+    workspace:
+      host: https://dbc-a32922bd-95d1.cloud.databricks.com/

@@ -1,0 +1,14 @@
+resources:
+
+  jobs:
+    flights_processing_job:
+      name: Flights_Serverless_ETL
+      tasks:
+        - task_key: run_etl_notebook
+          job_cluster_key: ""
+          
+          notebook_task:
+            notebook_path: ../etl/Process.ipynb
+            base_parameters:
+              schema_param: ${resources.schemas.flights_schema_res.name}
+              table_param: "flights_summary_demo"
