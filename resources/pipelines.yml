@@ -19,7 +19,7 @@ resources:
           notebook_task:
             notebook_path: ../etl/Process2.ipynb
             base_parameters:
-              schema_param: ${resources.schemas.flights_schema_res.name}
+              schema_name: ${resources.schemas.flights_schema_res.name}
               source_table_name: "flights_summary_demo"
               target_table_name: "flights_gold"
             
